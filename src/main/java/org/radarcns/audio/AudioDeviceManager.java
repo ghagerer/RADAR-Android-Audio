@@ -66,6 +66,7 @@ public class AudioDeviceManager extends AbstractDeviceManager<AudioService, Base
 
     @Override
     public void start(@NonNull final Set<String> acceptableIds) {
+        logger.debug("foo");
         // Audio recording
         updateStatus(DeviceStatusListener.Status.READY);
         setAudioUpdateRate(AUDIO_REC_RATE_S,AUDIO_DURATION_S,AUDIO_CONFIG_FILE);
